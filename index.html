@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Mocha - Café, Miaus e Livros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LOGO (HEADER) -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="./images/logo-meow-mocha.png" alt="Logo Meow Mocha" class="site-logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-btn">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/></svg>
+            </button>
+        </div>
+        <nav class="nav-links">
+            <a href="#sobre">Sobre nós</a>
+            <a href="#adote">Adote</a>
+            <a href="#miauloja">Miauloja</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Café, miaus<br>e livros</h1>
+            <p class="subtitle">Seu refúgio literário com sabor de café e ronronadas de amor.</p>
+            <button class="btn btn-hero open-schedule" data-reason="Visita Geral à Cafeteria">Agende sua visita</button>
+        </div>
+        <div>
+            <img src="./images/gato-hero.png" alt="Gato preto" class="hero-cat">
+        </div>
+    </section>
+
+    <!-- 3. SOBRE NÓS -->
+    <section id="sobre" class="about">
+        <div class="about-image">
+            <img src="./images/gato-sobre.png" alt="Gato sobre nós" class="about-cat">
+        </div>
+        <div class="about-content">
+            <h2>Sobre nós</h2>
+            <p>A Meow Mocha nasceu da paixão por três coisas que tornam a vida mais acolhedora: café, livros e gatos. Criamos um espaço único onde as pessoas podem desacelerar, apreciar uma bebida especial, mergulhar em boas histórias e ainda conhecer gatinhos em busca de um lar cheio de amor.</p>
+        </div>
+    </section>
+
+    <!-- 4. CARDS DE ADOÇÃO -->
+    <section id="adote" class="adopt">
+        <div class="section-title-container">
+            <h2 class="section-title-badge">Adote um dos nossos gatinhos !</h2>
+        </div>
+        
+        <div class="adopt-container">
+            <!-- Card 1 -->
+            <div class="cat-card">
+                <div class="cat-photo-wrapper">
+                    <img src="./images/gato1.jpg" alt="Gatinho Sienna" class="adoption-cat">
+                </div>
+                <div class="cat-info">
+                    <h3>Sienna</h3>
+                    <p class="cat-age">3 meses de idade</p>
+                    <ul class="cat-tags">
+                        <li>brincalhão</li>
+                        <li>carinhoso</li>
+                        <li>simpático</li>
+                        <li>dócil</li>
+                    </ul>
+                    <button class="btn btn-card open-schedule" data-reason="Adoção: Sienna">Adote já !</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="cat-card">
+                <div class="cat-photo-wrapper">
+                    <img src="./images/gato2.jpg" alt="Gatinha Mimi" class="adoption-cat">
+                </div>
+                <div class="cat-info">
+                    <h3>Mimi</h3>
+                    <p class="cat-age">4 anos de idade</p>
+                    <ul class="cat-tags">
+                        <li>brincalhona</li>
+                        <li>companheira</li>
+                        <li>ronrona alto</li>
+                        <li>dócil</li>
+                    </ul>
+                    <button class="btn btn-card open-schedule" data-reason="Adoção: Mimi">Adote já !</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="cat-card">
+                <div class="cat-photo-wrapper">
+                    <img src="./images/gato3.jpg" alt="Gatinha Amora" class="adoption-cat">
+                </div>
+                <div class="cat-info">
+                    <h3>Amora</h3>
+                    <p class="cat-age">6 anos de idade</p>
+                    <ul class="cat-tags">
+                        <li>pede carinho</li>
+                        <li>companheira</li>
+                        <li>manhosa</li>
+                        <li>gosta de petiscos</li>
+                    </ul>
+                    <button class="btn btn-card open-schedule" data-reason="Adoção: Amora">Adote já !</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="cat-card">
+                <div class="cat-photo-wrapper">
+                    <img src="./images/gato4.jpg" alt="Gatinha Estela" class="adoption-cat">
+                </div>
+                <div class="cat-info">
+                    <h3>Estela</h3>
+                    <p class="cat-age">2 meses de idade</p>
+                    <ul class="cat-tags">
+                        <li>caçadora</li>
+                        <li>dorminhoca</li>
+                        <li>travessa</li>
+                        <li>dócil</li>
+                    </ul>
+                    <button class="btn btn-card open-schedule" data-reason="Adoção: Estela">Adote já !</button>
+                </div>
+            </div>
+        </div>
+        <div class="paw-divider-container">
+            <img src="./images/patada.png" alt="Patada decorativa" class="paw-divider">
+        </div>
+    </section>
+
+    <!-- 6. MIAULOJA -->
+    <section id="miauloja" class="shop">
+        <h2 class="shop-title">Miauloja</h2>
+        <div class="shop-container">
+            
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./images/ecobag.jpg" alt="Ecobag" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h4>Ecobag com logo</h4>
+                    <p class="price">R$ 59,99</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./images/caneca.jpg" alt="Caneca" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h4>Xícara de café</h4>
+                    <p class="price">R$ 28,00</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./images/camiseta.jpg" alt="Camiseta" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h4>Camiseta unissex</h4>
+                    <p class="price">R$ 99,89</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. RODAPÉ -->
+    <section id="contato" class="contact">
+        <h2>Entre em contato</h2>
+        <p class="contact-sub">e agende sua visita</p>
+        
+        <div class="contact-box">
+            <div class="contact-item"><span>📸</span><span>@meow.mocha</span></div>
+            <div class="contact-item"><span>📞</span><span>(48) 9607-0543</span></div>
+            <div class="contact-item"><span>✉️</span><span>meowmochabooks@gmail.com</span></div>
+            <div class="contact-item"><span>📍</span><span>rua kuhnen schuller - florianópolis</span></div>
+        </div>
+
+        <img src="./images/gato-footer.png" alt="Gato do rodapé" class="footer-cat">
+    </section>
+
+    <!-- MODAL DE AGENDAMENTO -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModalBtn">&times;</button>
+            <h3>Agende o seu Horário</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="bookingReason">Motivo da visita:</label>
+                    <input type="text" id="bookingReason" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="userName">Seu Nome:</label>
+                    <input type="text" id="userName" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="userDate">Escolha a Data:</label>
+                    <input type="date" id="userDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="userTime">Escolha o Horário:</label>
+                    <select id="userTime" required>
+                        <option value="">Selecione um horário</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:30">17:30</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-hero" style="width: 100%; margin-top: 15px;">Confirmar Agendamento</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE AGENDAMENTO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('bookingModal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const openBtns = document.querySelectorAll('.open-schedule');
+            const bookingReasonInput = document.getElementById('bookingReason');
+            const bookingForm = document.getElementById('bookingForm');
+
+            openBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const reason = btn.getAttribute('data-reason') || 'Visita Geral';
+                    bookingReasonInput.value = reason;
+                    modal.classList.add('active');
+                });
+            });
+
+            closeModalBtn.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('userName').value;
+                const date = document.getElementById('userDate').value;
+                const time = document.getElementById('userTime').value;
+
+                alert(`Agendamento realizado com sucesso!\n\nNome: ${name}\nMotivo: ${bookingReasonInput.value}\nData: ${date}\nHorário: ${time}`);
+                
+                modal.classList.remove('active');
+                bookingForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
